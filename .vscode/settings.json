@@ -1,0 +1,35 @@
+{
+	// Preference
+    "editor.scrollBeyondLastLine": false,
+    "editor.trimWhitespaceOnDelete": true,
+	"editor.lineNumbers": "relative",
+	
+	// Editor
+	"workbench.sideBar.location": "right",
+    "workbench.startupEditor": "newUntitledFile",
+	
+	// I like Tabs
+    "editor.tabSize": 4,
+    "editor.fontLigatures": true,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false,
+
+    // Less Animation
+    "workbench.reduceMotion": "on",
+    "editor.cursorSmoothCaretAnimation": "off",
+    "editor.cursorBlinking": "solid",
+    "editor.smoothScrolling": false,
+    "workbench.list.smoothScrolling": false,
+    "terminal.integrated.smoothScrolling": false,
+    "terminal.integrated.cursorBlinking": false,
+    "terminal.integrated.tabs.enableAnimation": false,
+    "editor.stickyScroll.enabled": false,
+
+    // Telemetry
+    "telemetry.telemetryLevel": "off",
+	
+	// Experimental
+	"extensions.experimental.affinity": {
+		"asvetliakov.vscode-neovim": 1
+	},
+}
