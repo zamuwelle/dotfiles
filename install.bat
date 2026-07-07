@@ -2,6 +2,8 @@
 
 set "userDir=%USERPROFILE%"
 set "currentDir=%~dp0"
+set "vscodeDir=%APPDATA%\Code\User\"
 
-robocopy . "%userDir%" *.* /e /xf install.bat install.sh README.md
+copy /y "%currentDir%.vscode\settings.json" "%vscodeDir%settings.json"
+
 rmdir /q /s "%currentDir%"
