@@ -1,6 +1,6 @@
 current_dir="$(pwd)"
-vscode_dir="$HOME/.config/Code/"
+vscode_dir="$HOME/.config/Code"
 
-cp -f "$vscode_dir/Code/settings.json" "$current_dir"
+cp -f "$current_dir/Code/settings.json" "$vscode_dir"
 
 rm -f -r $current_dir
