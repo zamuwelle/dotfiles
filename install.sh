@@ -1,6 +1,6 @@
-user_dir=$HOME
-current_dir=$(pwd)
+current_dir="$(pwd)"
+vscode_dir="$HOME/.config/Code/"
 
-cp
+cp -f "$vscode_dir" "$current_dir"
 
 rm -f -r $current_dir
