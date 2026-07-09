@@ -18,9 +18,7 @@ Clipboard support:
 
 For Linux
 ```bash
-git clone https://github/zamuwelle/dotfiles.git
-chmod +x dotfiles/install.sh
-./dotfiles/install.sh
+git clone https://github/zamuwelle/dotfiles.git; chmod +x dotfiles/install.sh; ./dotfiles/install.sh
 ```
 For Windows
 ```bash
