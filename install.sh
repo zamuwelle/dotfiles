@@ -1,4 +1,4 @@
-current_dir="$(pwd)"
+current_dir="$(dirname) "$(dirname "$(readlink -f "$0")")")/dotfiles"
 vscode_dir="$HOME/.config/Code/User"
 
 mkdir -p "$vcode_dir"
