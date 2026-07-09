@@ -1,5 +1,5 @@
 current_dir="$(pwd)"
-vscode_dir="$HOME/.config/Code"
+vscode_dir="$HOME/.config/Code/User"
 
 cp -f "$current_dir/Code/settings.json" "$vscode_dir"
 
