@@ -1,7 +1,6 @@
 @echo off
 
 for %%I in ("%~dp0..") do set "currentDir=%%~fI\dotfiles"
-echo %currentDir%
 set "vscodeDir=%APPDATA%\Code\User"
 set "neovimDir=%LOCALAPPDATA%\nvim"
 
