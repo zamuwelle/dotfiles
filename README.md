@@ -18,11 +18,11 @@ Clipboard support:
 
 For Linux
 ```bash
-git clone https://github/zamuwelle/dotfiles.git; chmod +x dotfiles/install.sh; ./dotfiles/install.sh
+git clone https://github.com/zamuwelle/dotfiles.git; chmod +x dotfiles/install.sh; ./dotfiles/install.sh
 ```
 For Windows
 ```bash
-git clone https://github/zamuwelle/dotfiles.git & cmd /c dotfiles\install.bat
+git clone https://github.com/zamuwelle/dotfiles.git & cmd /c dotfiles\install.bat
 ```
 
 ## Enjoy 🔥
