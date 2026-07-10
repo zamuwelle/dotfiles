@@ -22,8 +22,7 @@ git clone https://github/zamuwelle/dotfiles.git; chmod +x dotfiles/install.sh; .
 ```
 For Windows
 ```bash
-git clone https://github/zamuwelle/dotfiles.git
-cmd /c dotfiles\install.bat
+git clone https://github/zamuwelle/dotfiles.git & cmd /c dotfiles\install.bat
 ```
 
 ## Enjoy 🔥
