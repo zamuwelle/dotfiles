@@ -3,8 +3,6 @@ local keymap = vim.keymap
 
 g.mapleader = " "
 
--- Keymaps
--- keymap.set(mode, key, action, opts)
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mdoe with jk" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
