@@ -1,6 +1,6 @@
 # Zamuwelle Dotfiles  
 
-## Presequisite
+## Prerequisite
 Make sure to install the following apps before installing my dotfiles:
 - **VS Code**
 
