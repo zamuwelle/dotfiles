@@ -20,12 +20,14 @@ opt.signcolumn = "yes" -- when and how to display the sign column
 opt.colorcolumn = "80" -- columns to highlight
 opt.showmatch = true -- briefly jump to matching bracket if insert one
 opt.matchtime = 1 -- tenths of a second to show matching paren
-opt.completeopt = "menu,menuone,noselect"
+opt.completeopt = "menu,menuone,noselect" -- options for Insert mode completion
 
 opt.writebackup = false -- make a backup before overwriting a file
 opt.swapfile = false -- whether to use a swapfile for a buffer
 opt.updatetime = 300 -- after this many milliseconds flush swap file
 opt.timeoutlen = 500 -- time out time in milliseconds
+opt.fixendofline = false -- make sure last line in file has <EOL>
+opt.endofline = false -- write <EOL> for last line in file
 
 opt.clipboard = "unnamedplus" -- use the clipboard as the unnamed register
 

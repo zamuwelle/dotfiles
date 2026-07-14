@@ -5,26 +5,59 @@ return {
 	build = ":TSUpdate",
 	config = function()
 		require("nvim-treesitter").install({
+			-- Programming languages
 			"bash",
-			"json",
+			"blade",
+			"javascript",
 			"lua",
-			"markdown",
-			"vim",
+			"php",
+			"php_only",
+			"powershell",
 			"python",
-			"vimdoc"
+			"tsx",
+			"typescript",
+
+			-- Markup languages
+			"html",
+			"markdown",
+			"markdown_inline",
+
+			-- Style Sheet languages
+			"css",
+
+			-- Vim
+			"vim",
+			"vimdoc",
 		})
 
 		vim.api.nvim_create_autocmd("FileType", {
 			pattern = {
-				"bash",
-				"json",
-				"markdown",
+				-- Programming languages
+				"blade",
+				"javascript",
+				"javascriptreact",
 				"lua",
-				"vim",
+				"php",
+				"ps1",
 				"python",
-				"help"
+				"sh",
+				"typescript",
+				"typescriptreact",
+
+				-- Markup languages
+				"html",
+				"markdown",
+
+				-- Style Sheet languages
+				"css",
+
+				-- Vim
+				"help",
+				"vim",
 			},
-			callback = function() vim.treesitter.start() end,
+			callback = function()
+				vim.treesitter.start()
+			end,
 		})
 	end,
 }
