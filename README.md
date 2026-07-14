@@ -7,7 +7,7 @@ Make sure to install the following apps before installing my dotfiles:
 	- Extensions: [VSCode Neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim)
 - **Neovim**
 
-## **Neovim**
+### **Neovim**
 - **LSP**:
     - `basedpyright`
     - `bashls`
