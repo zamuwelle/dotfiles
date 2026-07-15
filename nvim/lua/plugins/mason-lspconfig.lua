@@ -22,6 +22,7 @@ return {
 
 				-- Style Sheet languages
 				"cssls",
+				"tailwindcss",
 			},
 		},
 	},
