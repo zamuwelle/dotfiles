@@ -33,6 +33,10 @@ keymap.set("n", "<C-a>", "gg<S-v>G", { desc = "Select entire file" })
 -- Delete a word backwards
 keymap.set("n", "dw", 'vb"_d')
 
+-- Comments \
+keymap.set({"n"}, "<C-\\>", "gcc", { remap = true })
+keymap.set({"v"}, "<C-\\>", "gc", { remap = true })
+
 -- Save
 keymap.set("n", "<leader>w", "<cmd>w<CR>")
 
