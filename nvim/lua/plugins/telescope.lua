@@ -1,30 +1,55 @@
 return {
 	"nvim-telescope/telescope.nvim",
+
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 	},
-	config = function()
-		local telescope = require("telescope")
-		local builtin = require("telescope.builtin")
-		local actions = require("telescope.actions")
 
-		telescope.setup({
-			defaults = {
-				mappings = {
-					i = {
-						["<C-j>"] = actions.move_selection_next,
-						["<C-k>"] = actions.move_selection_previous,
-					},
+	opts = {
+		defaults = {
+			layout_strategy = "horizontal",
+			sorting_strategy = "ascending",
+
+			layout_config = {
+				prompt_position = "top",
+			},
+
+			mappings = {
+				i = {
+					["<C-j>"] = require("telescope.actions").move_selection_next,
+					["<C-k>"] = require("telescope.actions").move_selection_previous,
+					["<Esc>"] = require("telescope.actions").close,
 				},
 			},
-		})
+		},
 
-		vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
-		vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
-		vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
-		vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
-		vim.keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = "Telescope recent files" })
-		vim.keymap.set("n", "<leader>fc", builtin.grep_string, { desc = "Telescope grep word under cursor" })
-		vim.keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "Telescope keymaps" })
+		pickers = {
+			find_files = {
+				hidden = true,
+			},
+		},
+	},
+
+	config = function(_, opts)
+		require("telescope").setup(opts)
+
+		local builtin = require("telescope.builtin")
+		local keymap = vim.keymap
+
+		keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find files" })
+		keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Live grep" })
+		keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Find buffers" })
+		keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Help tags" })
+		keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = "Recent files" })
+
+		-- LSP
+		keymap.set("n", "<leader>fs", builtin.lsp_document_symbols, { desc = "Document symbols" })
+		keymap.set("n", "<leader>fS", builtin.lsp_workspace_symbols, { desc = "Workspace symbols" })
+
+		-- Diagnostics
+		keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Diagnostics" })
+
+		-- Commands
+		keymap.set("n", "<leader>fc", builtin.commands, { desc = "Commands" })
 	end,
 }
