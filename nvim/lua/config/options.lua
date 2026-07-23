@@ -2,21 +2,6 @@ local opt = vim.opt
 local g = vim.g
 local cmd = vim.cmd
 
--- Appearance
-vim.api.nvim_create_autocmd("ColorScheme", {
-  pattern = "*",
-  callback = function()
-    -- Set background to transparent for all major UI components
-    local transparent_groups = {
-      "Normal", "NormalNC", "NormalFloat", "FloatBorder", 
-      "SignColumn", "EndOfBuffer", "LineNr"
-    }
-    for _, group in ipairs(transparent_groups) do
-      vim.api.nvim_set_hl(0, group, { bg = "none" })
-    end
-  end,
-})
-
 cmd.colorscheme("habamax") -- load a specific color scheme
 opt.termguicolors = true -- enable 24-bit RGB color in the TUI
 opt.number = true -- print the line number in front of each line
