@@ -2,6 +2,7 @@ return {
 	{
 		"folke/which-key.nvim",
 		opts = {
+			triggers = { "<leader>" },
 			spec = {
 				{ "<leader>c", group = "Change" },
 				{ "<leader>d", group = "Delete" },
