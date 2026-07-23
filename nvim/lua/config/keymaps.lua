@@ -28,21 +28,17 @@ keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode" })
 keymap.set("n", "nh", "<cmd>nohl<CR>", { desc = "Clear search highlights" })
 
 -- Select all
-keymap.set("n", "<C-a>", "gg<S-v>G", { desc = "Select entire file" })
+keymap.set("n", "<C-a>", "ggVG", { desc = "Select entire file" })
 
 -- Delete a word backwards
 keymap.set("n", "dw", 'vb"_d')
 
--- Comments \
-keymap.set({"n"}, "<C-\\>", "gcc", { remap = true })
-keymap.set({"v"}, "<C-\\>", "gc", { remap = true })
-
--- Save
-keymap.set("n", "<leader>w", "<cmd>w<CR>")
+-- Rename
+vim.keymap.set("n", "<leader>ra", ":%s/\\<<C-r><C-w>\\>//g<Left><Left>", { desc = "Rename word under cursor" })
 
 -- Numbers
-keymap.set("n", "+", "<C-a>", { desc = "Increment number" })
-keymap.set("n", "-", "<C-x>", { desc = "Decrement number" })
+keymap.set("n", "+", "<C-a>", { desc = "Increment number"})
+keymap.set("n", "-", "<C-x>", { desc = "Decrement number"})
 
 -- Window management
 keymap.set("n", "ss", "<C-w>s", { desc = "Split window horizontally" })
