@@ -2,6 +2,8 @@ local opt = vim.opt
 local g = vim.g
 local cmd = vim.cmd
 
+g.python_recommended_style = 0
+
 cmd.colorscheme("habamax") -- load a specific color scheme
 opt.termguicolors = true -- enable 24-bit RGB color in the TUI
 opt.number = true -- print the line number in front of each line
