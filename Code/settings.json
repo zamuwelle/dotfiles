@@ -4,14 +4,14 @@
 	"editor.trimWhitespaceOnDelete": true,
 	"editor.lineNumbers": "relative",
 	"editor.renderWhitespace": "all",
+	"editor.fontLigatures": true,
 
 	// Editor
 	"workbench.sideBar.location": "right",
 	"workbench.startupEditor": "newUntitledFile",
 
 	// I like Tabs
-	"editor.tabSize": 4,
-	"editor.fontLigatures": true,
+	"editor.tabSize": 2,
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,
 
