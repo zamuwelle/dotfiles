@@ -1,5 +1,4 @@
-return {}
---[[ return {
+return {
 	"neovim/nvim-lspconfig",
 
 	config = function()
@@ -54,4 +53,4 @@ return {}
 		keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic" })
 		keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Diagnostics list" })
 	end,
-} ]]
+}

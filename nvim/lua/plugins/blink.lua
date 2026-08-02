@@ -1,5 +1,4 @@
-return {}
---[[ return {
+return {
 	"saghen/blink.cmp",
 
 	dependencies = {
@@ -35,4 +34,4 @@ return {}
 			implementation = "rust",
 		},
 	},
-} ]]
+}

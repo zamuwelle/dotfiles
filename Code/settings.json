@@ -33,4 +33,12 @@
 	"extensions.experimental.affinity": {
 		"asvetliakov.vscode-neovim": 1
 	},
+
+	// Neovim Keymaps
+	"vscode-neovim.compositeKeys": {
+		// Normal mode
+		"jk": {
+			"command": "vscode-neovim.escape"
+		}
+	}
 }

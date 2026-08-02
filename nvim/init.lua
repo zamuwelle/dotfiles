@@ -1,5 +1,5 @@
 if vim.g.vscode then
-	vim.opt.clipboard:append("unnamedplus")
+	require("vscode_config")
 else
 	require("config")
 end
