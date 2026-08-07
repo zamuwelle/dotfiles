@@ -49,8 +49,6 @@ keymap.set("n", "sl", function() vscode.action("workbench.action.navigateRight")
 -- Tabs
 keymap.set("n", "te", function() vscode.action("workbench.action.files.newUntitledFile") end, { desc = "Open new tab" })
 keymap.set("n", "tx", function() vscode.action("workbench.action.closeActiveEditor") end, { desc = "Close current tab" })
-keymap.set("n", "<Tab>", function() vscode.action("workbench.action.nextEditor") end, { desc = "Next tab" })
-keymap.set("n", "<S-Tab>", function() vscode.action("workbench.action.previousEditor") end, { desc = "Previous tab" })
 
 -- Window resizing
 keymap.set("n", "<Left>", function() vscode.action("workbench.action.decreaseViewWidth") end, { desc = "Decrease window width" })
